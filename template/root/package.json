@@ -1,0 +1,15 @@
+{
+  "name": "<%=appname%>",
+  "main":  "src/p/index",
+  "dependencies": {
+    <%if(isWeex === true){%>
+    "web-rax-framework": "~0.0.9",
+    "rax-components": "~0.0.9",
+    "weex-rax-framework": "~0.0.9"
+    <%}else{%>
+    "react": "~15.4.1",
+    "reqwest": "^2.0.5",
+    "react-dom": "~15.4.1"
+    <%}%>
+  }
+}
