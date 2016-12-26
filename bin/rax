@@ -2,6 +2,7 @@
 var program = require('ginit').commander;
 var Tasks = require('../index');
 var RT = require('../lib/rt');
+var updater = require('npm-updater');
 var semver = require('semver');
 var util = require('util');
 var packageJSON = require(__dirname+'/../package.json');
@@ -14,6 +15,15 @@ var helpInfo = {
   'start': ['启动项目调试服务器', 'Start up project debug server'],
   '--port': ['端口号','server port'],  
 };
+
+updater({
+    package: packageJSON,
+    abort: false,
+    interval: '1h',
+    tag: packageJSON.version,
+    updateMessage: packageJSON.log || '版本升级'
+});
+
 var lang = process.env.LANG || 'zh';
 lang = (lang.indexOf('zh') === 0) ? 0 : 1;
 program
