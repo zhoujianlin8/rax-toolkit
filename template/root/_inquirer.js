@@ -4,12 +4,12 @@
 var exec = require('child_process').exec;
 module.exports = {
   prompts:[
-    {
+  /*  {
       type: 'input',
       name: 'group',
       message: '该项目所属 gitlab 上的组',
       default: 'cm'
-    },
+    },*/
     {
       type: 'confirm',
       name: 'isWeex',

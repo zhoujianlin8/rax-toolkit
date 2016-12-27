@@ -23,11 +23,11 @@ $ sudo npm install -g rax-toolkit
 
 
 ### 命令使用
-* rax start 开启项目
-* rax build 打包项目
+* rax start [p/name](某页面)开启项目
+* rax build [p/name](某页面)打包项目
 * rax init [url?] 项目初始化 后面参数实现自定义初始化
 * rax data [name][type?] 创建本地mock数据type submit(s)list(l)data(d)
-* rax p [name][type?] 创建页面
+* rax p [name] 创建页面
 * rax c [name]  创建components
 
 
@@ -69,9 +69,6 @@ $ sudo npm install -g rax-toolkit
 ````
 ['src/p/*/index.js','src/images/**','src/fonts/**','src/static/**']
 ````
-
-
-        
 
 ### bug反馈 zhoujianlin8@gmail.com
 

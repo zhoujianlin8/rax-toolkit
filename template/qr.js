@@ -1,6 +1,3 @@
-/**
- * Created by zhou on 16/12/26.
- */
 (function (global) {
     /*
      * QRious v2.2.0

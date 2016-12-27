@@ -1,8 +1,8 @@
 <%if(isWeb === true){%>
-import {Component} from 'react';
+import React,{Component} from 'react';
 import './index.less';
 <%}else{%>
-import {Component,} from 'rax';
+import {Component,createElement} from 'rax';
 import {View} from 'rax-components';
 import Style from './index.less';
 <%}%>

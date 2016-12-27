@@ -30,6 +30,7 @@ Tasks.init = function (str) {
     }, function (obj) {
         abc.options = abc.options || {};
         abc.options.isWeb = !obj.isWeex;
+
         self.p('index');
         console.log('项目初始成功');
         xtUtil.tnpmInstall()
@@ -121,7 +122,7 @@ function getData(str) {
         classedName: classedName, //大驼峰
         scriptAppName: scriptAppName, //项目app
         cameledName: cameledName,   //小驼峰
-        isWeb: abc && abc.options && options.isWeb,
+        isWeb: abc && abc.options && abc.options.isWeb,
         router: str
     });
 
