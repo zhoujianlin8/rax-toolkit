@@ -76,6 +76,7 @@ program
       var args = getArgs();
       execScript({cli: 'start',args: args, done: function (err,cb) {
           Tasks.start({
+              port: program.port,
               args:args
           },cb);
       }})
@@ -170,7 +171,7 @@ function execScript (obj,cb) {
         }else{
             //未找到提示
             if(execCli.indexOf('pre') !== 0 && execCli.indexOf('post') !== 0){
-                console.log('rx '+cli + '命令不存在')
+                console.log('rax '+cli + '命令不存在')
             }
             callback()
         }
